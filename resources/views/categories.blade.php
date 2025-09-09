@@ -4,7 +4,7 @@
     @foreach ($categories as $category)
         <ul>
             <li>
-                <a href="blog/categories/{{ $category->slug }}">{{ $category->name }}</a> 
+                <a href="/blog/categories/{{ $category->slug }}">{{ $category->name }}</a> 
             </li>
         </ul>
     @endforeach
