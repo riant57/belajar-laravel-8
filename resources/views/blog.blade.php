@@ -7,7 +7,7 @@
             <h4>
                 <a class="text-decoration-none" href="/blog/{{ $post->slug }}">{{ $post->title }}</a> 
             </h4>
-            <p>By <a class="text-decoration-none" href="#">{{$post->user->name}}</a> in <a class="text-decoration-none" href="/blog/categories/{{$post->category->slug}}">{{$post->category->name}}</p></a>
+            <p>By <a class="text-decoration-none" href="/authors/{{$post->author->username}}">{{$post->author->name}}</a> in <a class="text-decoration-none" href="/blog/categories/{{$post->category->slug}}">{{$post->category->name}}</p></a>
             <p>{{ $post->excerpt }}</p>
             <a class="text-decoration-none" href="/blog/{{ $post->slug }}">Read More</a> 
         </article>
