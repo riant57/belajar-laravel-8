@@ -7,6 +7,7 @@
             <h2>
                 <a href="/blog/{{ $post->slug }}">{{ $post->title }}</a> 
             </h2>
+            <p>By <a class="text-decoration-none" href="/authors/{{$post->author->username}}">{{$post->author->name}}</a></p>
             <p>{{ $post->excerpt }}</p>
         </article>
     @endforeach

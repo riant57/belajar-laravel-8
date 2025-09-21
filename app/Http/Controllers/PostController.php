@@ -12,7 +12,10 @@ class PostController extends Controller
         return view('blog',[
             "title" => "Blog",
             //"posts" => Post::all(),
-            "posts" => Post::latest()->get(),
+            // Lazy Load
+            //"posts" => Post::latest()->get(),
+            // Eager Load
+            "post" => Post::with(['author','category'])->latest()->get(),
         ]);
     }
 
