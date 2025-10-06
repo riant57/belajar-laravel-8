@@ -15,7 +15,7 @@ class PostController extends Controller
             // Lazy Load
             //"posts" => Post::latest()->get(),
             // Eager Load
-            "posts" => Post::with(['author','category'])->latest()->get(),
+            "posts" => Post::latest()->get(),
         ]);
     }
 

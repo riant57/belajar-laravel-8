@@ -11,6 +11,7 @@ class Post extends Model
 
     // field boleh diisi, sisanya nggak boleh
     protected $fillable = ['category_id','title','slug', 'excerpt', 'body'];
+    protected $with = ['category', 'author'];
 
     // field yang tidak boleh diisi, sisanya boleh
     //protected $guarded = ['id'];
